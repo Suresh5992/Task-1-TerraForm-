@@ -74,8 +74,8 @@ resource "aws_security_group" "Project-sg10" {
 
 resource "aws_instance" "newproject" {
     ami                    = "ami-03f4878755434977f"   # change ami id for different region
-    instance_type          = "t2.medium"
-    key_name               = "test1245"
+    instance_type          = "t2.small"
+    key_name               = "test123"
     subnet_id              = aws_subnet.product1.id
     availability_zone      = "ap-south-1a"  # Specify a different Availability Zone
     associate_public_ip_address = true  # Add this line to associate a public IP address    
