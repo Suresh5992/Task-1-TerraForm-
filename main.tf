@@ -80,7 +80,7 @@ resource "aws_instance" "newproject" {
     availability_zone      = "ap-south-1a"  # Specify a different Availability Zone
     associate_public_ip_address = true  # Add this line to associate a public IP address    
     vpc_security_group_ids = [aws_security_group.Project-sg10.id]
-    user_data              = templatefile("./deploy.sh", {})
+  //  user_data              = templatefile("./deploy.sh", {})
     
     tags = {
         Name = "Nginx-Terraform-Jenkins-SonarQube-Docker-Trivy"
